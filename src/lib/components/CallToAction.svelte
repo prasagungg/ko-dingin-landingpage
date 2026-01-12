@@ -1,3 +1,14 @@
+<script>
+		const phoneNumber = '6281339179955';
+
+	const message = 'Halo Admin Ko-Dingin, saya mau konsultasi tugas dong! 🥶';
+
+	const handleClick = () => {
+		const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+		window.open(url, '_blank');
+	};
+</script>
+
 <section id="contact" class="bg-base-100 px-4 py-20">
 	<div class="container mx-auto">
 		<div
@@ -53,6 +64,7 @@
 				</p>
 
 				<button
+					onclick={handleClick}
 					class="group relative inline-flex h-16 items-center gap-3 overflow-hidden rounded-full bg-white px-10 text-lg font-bold text-blue-600 shadow-xl transition-all duration-300 hover:scale-105 hover:bg-sky-50 hover:shadow-sky-500/50"
 				>
 					<div

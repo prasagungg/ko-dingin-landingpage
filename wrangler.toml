@@ -8,3 +8,7 @@ main = ".svelte-kit/cloudflare/_worker.js"
 [assets]
 directory = ".svelte-kit/cloudflare"
 binding = "ASSETS"
+
+[[routes]]
+pattern = "kodingin.radenmaulidia.my.id"
+custom_domain = true
